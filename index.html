@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdul Sahur – Chef & Culinary Guide</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,700;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-pill">
+        <a href="#" class="nav-link active" data-page="home">Home</a>
+        <a href="#" class="nav-link" data-page="about">About</a>
+        <a href="#" class="nav-link" data-page="project">Project</a>
+        <a href="#" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="chef-logo">
+        <img src="https://i.imgur.com/kYxzPZl.png" alt="Chef Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'logo-fallback\'>👨‍🍳</span>'"/>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- ========== HOME PAGE ========== -->
+    <section class="page" id="page-home">
+      <div class="home-hero">
+        <div class="hero-text">
+          <h1 class="hero-heading">
+            Hello! I'm Abdul<br>
+            Sahur &nbsp;- Chef &amp;<br>
+            Culinary Guide
+          </h1>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700&q=80"
+            alt="Chef plating food"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT PAGE ========== -->
+    <section class="page hidden" id="page-about">
+
+      <!-- Slide 1: Skills & Bio -->
+      <div class="about-slide" id="about-slide-1">
+        <div class="about-card slide-card">
+          <h2 class="card-title"><em>SKILLS:</em></h2>
+          <ul class="skills-list">
+            <li><strong>Cooking Skills</strong> – The ability to cook different kinds of food and make them taste good.</li>
+            <li><strong>Knife Skills</strong> – Knowing how to cut, slice, and chop ingredients properly and safely.</li>
+            <li><strong>Creativity</strong> – Making new recipes and presenting food in an attractive way.</li>
+            <li><strong>Time Management</strong> – Cooking and preparing food on time, especially in a busy kitchen.</li>
+            <li><strong>Cleanliness and Hygiene</strong> – Keeping the kitchen, tools, and ingredients clean to ensure food safety.</li>
+          </ul>
+
+          <h2 class="card-title bio-title"><em>BIO:</em></h2>
+          <p class="bio-text">
+            A chef is a skilled professional who prepares and cooks food in restaurants, hotels, or other food establishments.
+            They are responsible for creating delicious meals, planning menus, and making sure food is prepared safely and cleanly.
+            A chef uses creativity and cooking knowledge to make dishes that people enjoy. They also work with a kitchen team to
+            prepare and serve food on time. Being a chef requires passion, patience, and strong cooking skills.
+          </p>
+        </div>
+        <button class="slide-arrow right-arrow" onclick="showAboutSlide(2)">&#9654;</button>
+      </div>
+
+      <!-- Slide 2: Experience -->
+      <div class="about-slide hidden" id="about-slide-2">
+        <button class="slide-arrow left-arrow" onclick="showAboutSlide(1)">&#9664;</button>
+        <div class="about-two-col">
+          <div class="about-card exp-card">
+            <h2 class="card-title"><em>EXPERIENCE:</em></h2>
+            <p class="bio-text">
+              I have experience preparing and cooking different kinds of dishes in the kitchen. I helped in preparing
+              ingredients such as cutting vegetables, marinating meat, and organizing cooking tools. I also assisted in
+              cooking meals and making sure the food is served on time. During my experience, I learned how to keep the
+              kitchen clean and follow proper food safety. Working in the kitchen also helped me improve my teamwork and
+              time management skills.
+            </p>
+          </div>
+          <div class="exp-image">
+            <img
+              src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=700&q=80"
+              alt="Chef cooking experience"
+            />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== PROJECT PAGE ========== -->
+    <section class="page hidden" id="page-project">
+
+      <!-- Dish List View -->
+      <div id="project-list">
+        <h2 class="project-heading">LET'S COOK TOGETHER</h2>
+        <div class="dishes-carousel-wrapper">
+          <button class="carousel-btn left" onclick="carouselShift(-1)">&#9664;</button>
+          <div class="dishes-track-container">
+            <div class="dishes-track" id="dishesTrack">
+
+              <!-- Adobo -->
+              <div class="dish-card">
+                <div class="dish-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Adobo"/>
+                </div>
+                <div class="dish-info">
+                  <h3>Adobo</h3>
+                  <p>Adobo is a famous Filipino dish made with chicken or pork cooked in soy sauce, vinegar, garlic, and spices. It has a savory and slightly sour taste and is usually served with rice.</p>
+                  <button class="view-btn" onclick="showDishDetail('adobo')">View</button>
+                </div>
+              </div>
+
+              <!-- Sinigang -->
+              <div class="dish-card">
+                <div class="dish-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=400&q=80" alt="Sinigang"/>
+                </div>
+                <div class="dish-info">
+                  <h3>Sinigang</h3>
+                  <p>A sour Filipino soup usually cooked with pork, vegetables, and tamarind. It has a refreshing sour taste and is often served hot with rice.</p>
+                  <button class="view-btn" onclick="showDishDetail('sinigang')">View</button>
+                </div>
+              </div>
+
+              <!-- Ginataang Saging -->
+              <div class="dish-card">
+                <div class="dish-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80" alt="Ginataang Saging"/>
+                </div>
+                <div class="dish-info">
+                  <h3>Ginataang Saging</h3>
+                  <p>A sweet Filipino dish made with bananas cooked in coconut milk and sugar. It is creamy, sweet, and often eaten as a snack or dessert.</p>
+                  <button class="view-btn" onclick="showDishDetail('ginataang')">View</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-btn right" onclick="carouselShift(1)">&#9654;</button>
+        </div>
+      </div>
+
+      <!-- Dish Detail View -->
+      <div id="project-detail" class="hidden">
+        <h2 class="project-heading" id="detail-title">Adobo</h2>
+        <div class="video-container">
+          <video id="dish-video" controls poster="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&q=80">
+            <source src="" type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="back-btn-wrap">
+          <button class="view-btn back-btn" onclick="showProjectList()">&#8592; Back to Projects</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========== CONTACT PAGE ========== -->
+    <section class="page hidden" id="page-contact">
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h2 class="contact-heading">LET'S TALK ABOUT FOOD</h2>
+          <div class="contact-info">
+            <div class="info-box">Abdul Sahur</div>
+            <div class="info-box">abdul@gmail.com</div>
+            <div class="info-box">09375728351</div>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon fb" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon ig" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon tg" aria-label="Telegram">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="chef-contact-img">
+            <img
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80"
+              alt="Chef illustration"
+              onerror="this.parentElement.innerHTML='<div class=\'chef-placeholder\'>👨‍🍳</div>'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // ── Navigation ──
+    const navLinks = document.querySelectorAll('.nav-link');
+    const pages = document.querySelectorAll('.page');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = link.dataset.page;
+
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+
+        pages.forEach(p => p.classList.add('hidden'));
+        document.getElementById('page-' + target).classList.remove('hidden');
+
+        // reset about slides
+        if (target === 'about') showAboutSlide(1);
+        // reset project
+        if (target === 'project') showProjectList();
+      });
+    });
+
+    // ── About Slides ──
+    function showAboutSlide(n) {
+      document.querySelectorAll('.about-slide').forEach(s => s.classList.add('hidden'));
+      document.getElementById('about-slide-' + n).classList.remove('hidden');
+    }
+
+    // ── Project / Dishes ──
+    let carouselOffset = 0;
+    function carouselShift(dir) {
+      const track = document.getElementById('dishesTrack');
+      const cards = track.querySelectorAll('.dish-card');
+      const maxOffset = Math.max(0, cards.length - 3);
+      carouselOffset = Math.max(0, Math.min(maxOffset, carouselOffset + dir));
+      const cardWidth = cards[0].offsetWidth + 24; // gap
+      track.style.transform = `translateX(-${carouselOffset * cardWidth}px)`;
+    }
+
+    function showDishDetail(dish) {
+      const titles = { adobo: 'Adobo', sinigang: 'Sinigang', ginataang: 'Ginataang Saging' };
+      document.getElementById('detail-title').textContent = titles[dish] || dish;
+      document.getElementById('project-list').classList.add('hidden');
+      document.getElementById('project-detail').classList.remove('hidden');
+    }
+
+    function showProjectList() {
+      document.getElementById('project-list').classList.remove('hidden');
+      document.getElementById('project-detail').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
