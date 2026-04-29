@@ -111,8 +111,8 @@ img { display: block; max-width: 100%; }
 }
 
 .chef-logo img {
-  width: 100%;
-  height: 100%;
+  width: 25%;
+  height: 25%;
   object-fit: cover;
 }
 
