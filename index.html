@@ -19,8 +19,9 @@
         <a href="#" class="nav-link" data-page="project">Project</a>
         <a href="#" class="nav-link" data-page="contact">Contact</a>
       </div>
-      <div class="chef-logo">
-        <img src="C:\Users\jecreates\Downloads\4eefe263-cc70-432c-89e5-94c83bfd547a.jfif" alt="Andrei Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'logo-fallback\'>👨‍🍳</span>'"/>
+      <!-- Logo: replace the src with your own image file once uploaded -->
+      <div class="andrei-logo">
+        <img src="C:\Users\jecreates\Downloads\4eefe263-cc70-432c-89e5-94c83bfd547a.jfif" alt="Andrei Logo"/>
       </div>
     </nav>
   </header>
@@ -39,9 +40,10 @@
           </h1>
         </div>
         <div class="hero-image">
+          <!-- Replace src with your own photo -->
           <img
             src="C:\Users\jecreates\Downloads\cd4f580b-85e5-4195-871a-f912abdab87f.jfif"
-            alt=""
+            alt="Andrei Galza"
           />
         </div>
       </div>
@@ -59,15 +61,15 @@
             <li><strong>Problem Solving</strong> – Finding quick and smart solutions when challenges or issues come up.</li>
             <li><strong>Teamwork</strong> – Working cooperatively with others to achieve a common goal.</li>
             <li><strong>Time Management</strong> – Organizing and prioritizing tasks to meet deadlines efficiently.</li>
-            <li><strong>Cleanliness and Hygiene</strong> – Keeping myself look good and smells good.</li>
+            <li><strong>Adaptability</strong> – Able to adjust quickly to new situations, environments, and changes.</li>
           </ul>
 
           <h2 class="card-title bio-title"><em>BIO:</em></h2>
           <p class="bio-text">
-            Hi, I'm Andrei Galza, a student who loves learning new things and taking on challenges. 
-            I'm passionate about growing my skills and always give my best in everything I like. 
-            I pay close attention to detail, work well with others, and never stop looking for ways to improve. 
-            Outside of school, I enjoy playing basketball with my friends. 
+            Hi, I'm Andrei Galza, a student who loves learning new things and taking on challenges.
+            I'm passionate about growing my skills and always give my best in everything I like.
+            I pay close attention to detail, work well with others, and never stop looking for ways to improve.
+            Outside of school, I enjoy playing basketball with my friends.
             I'm still on my journey, but I'm excited about where it's headed.
           </p>
         </div>
@@ -81,16 +83,17 @@
           <div class="about-card exp-card">
             <h2 class="card-title"><em>EXPERIENCE:</em></h2>
             <p class="bio-text">
-              I enjoy stepping out of my comfort zone and trying things I've never done before. 
-              I like exploring new activities and sports, whether it's something completely unfamiliar or something that challenges me in a different way. 
-              One thing I'm really into is basketball — it's the sport I love the most and it has taught me a lot about teamwork, discipline, and never giving up. 
+              I enjoy stepping out of my comfort zone and trying things I've never done before.
+              I like exploring new activities and sports, whether it's something completely unfamiliar or something that challenges me in a different way.
+              One thing I'm really into is basketball — it's the sport I love the most and it has taught me a lot about teamwork, discipline, and never giving up.
               Trying new sports has also helped me become more open-minded, adaptable, and confident in facing new challenges.
             </p>
           </div>
           <div class="exp-image">
+            <!-- Replace with your own experience image -->
             <img
-              src="https://pin.it/5MLk8S0xI"
-              alt=""
+              src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800&q=80"
+              alt="Basketball experience"
             />
           </div>
         </div>
@@ -101,7 +104,7 @@
     <!-- ========== PROJECT PAGE ========== -->
     <section class="page hidden" id="page-project">
 
-      <!-- Dish List View -->
+      <!-- Hobbies List -->
       <div id="project-list">
         <h2 class="project-heading">Andrei's Hobbies</h2>
         <div class="dishes-carousel-wrapper">
@@ -112,36 +115,36 @@
               <!-- Basketball -->
               <div class="dish-card">
                 <div class="dish-img-wrap">
-                  <img src="https://pin.it/2Q8uEpevK" alt="Basketball"/>
+                  <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?w=500&q=80" alt="Basketball"/>
                 </div>
                 <div class="dish-info">
                   <h3>Basketball</h3>
-                  <p>Baskettball is like in my DNA, it's my happiness, my happy pill, this is where I get to know many people. In short it's like my life.</p>
-                  <button class="view-btn" onclick="showBasketballDetail('Basketball')">View</button>
+                  <p>Basketball is like in my DNA, it's my happiness, my happy pill, this is where I get to know many people. In short it's like my life.</p>
+                  <button class="view-btn" onclick="showDetail('Basketball')">View</button>
                 </div>
               </div>
 
               <!-- Anime -->
               <div class="dish-card">
                 <div class="dish-img-wrap">
-                  <img src="https://pin.it/7eSOGxyg5" alt="Anime"/>
+                  <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&q=80" alt="Anime"/>
                 </div>
-                <div class="anime-info">
+                <div class="dish-info">
                   <h3>Anime</h3>
-                  <p>Anime is my second hobbies. I watch anime when I can't play basketball, when I'm bored, when eating, and before going to sleep.</p>
-                  <button class="view-btn" onclick="showAnimeDetail('Anime')">View</button>
+                  <p>Anime is my second hobby. I watch anime when I can't play basketball, when I'm bored, when eating, and before going to sleep.</p>
+                  <button class="view-btn" onclick="showDetail('Anime')">View</button>
                 </div>
               </div>
 
               <!-- Sleeping -->
               <div class="dish-card">
                 <div class="dish-img-wrap">
-                  <img src="https://pin.it/1O1qvy6rG" alt="Sleeping"/>
+                  <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&q=80" alt="Sleeping"/>
                 </div>
                 <div class="dish-info">
                   <h3>Sleeping</h3>
-                  <p>I mean who don't like sleeping? This is my peace.</p>
-                  <button class="view-btn" onclick="showsleepDetail('Sleeping')">View</button>
+                  <p>I mean who doesn't like sleeping? This is my peace.</p>
+                  <button class="view-btn" onclick="showDetail('Sleeping')">View</button>
                 </div>
               </div>
 
@@ -151,17 +154,18 @@
         </div>
       </div>
 
-      <!-- Andrei's Hobbies Detail View -->
+      <!-- Hobby Detail View -->
       <div id="project-detail" class="hidden">
         <h2 class="project-heading" id="detail-title">Basketball</h2>
         <div class="video-container">
-          <img src="C:\Users\jecreates\Downloads\f0a3f8b8-472d-4712-b1f8-0a5166a5f8dc.jfif" alt="Anime"/>
-          <video id="Basketball-video" controls poster="">
+          <video id="detail-video" controls
+            poster="https://images.unsplash.com/photo-1519861531473-9200262188bf?w=900&q=80">
             <source src="" type="video/mp4"/>
+            Your browser does not support the video tag.
           </video>
         </div>
         <div class="back-btn-wrap">
-          <button class="view-btn back-btn" onclick="showProjectList()">&#8592; Back to Projects</button>
+          <button class="view-btn back-btn" onclick="showProjectList()">&#8592; Back to Hobbies</button>
         </div>
       </div>
 
@@ -191,10 +195,11 @@
         </div>
         <div class="contact-right">
           <div class="chef-contact-img">
+            <!-- Replace with your own photo -->
             <img
-              src=""C:\Users\jecreates\Downloads\d69da6ec-2a41-45bd-a4b8-7e1995bcfbcb.jfif""
-              alt="Joshua Garcia"
-              onerror="this.parentElement.innerHTML='<div class=\'chef-placeholder\'>👨‍🍳</div>'"
+              src="C:\Users\jecreates\Downloads\d69da6ec-2a41-45bd-a4b8-7e1995bcfbcb.jfif"
+              alt="Andrei Galza"
+              onerror="this.parentElement.innerHTML='<div class=\'chef-placeholder\'>😎</div>'"
             />
           </div>
         </div>
@@ -203,7 +208,6 @@
 
   </main>
 
-  <script src="script.js"></script>
   <script>
     // ── Navigation ──
     const navLinks = document.querySelectorAll('.nav-link');
@@ -220,9 +224,7 @@
         pages.forEach(p => p.classList.add('hidden'));
         document.getElementById('page-' + target).classList.remove('hidden');
 
-        // reset about slides
         if (target === 'about') showAboutSlide(1);
-        // reset project
         if (target === 'project') showProjectList();
       });
     });
@@ -233,20 +235,29 @@
       document.getElementById('about-slide-' + n).classList.remove('hidden');
     }
 
-    // ── Project / Dishes ──
+    // ── Carousel ──
     let carouselOffset = 0;
     function carouselShift(dir) {
       const track = document.getElementById('dishesTrack');
       const cards = track.querySelectorAll('.dish-card');
       const maxOffset = Math.max(0, cards.length - 3);
       carouselOffset = Math.max(0, Math.min(maxOffset, carouselOffset + dir));
-      const cardWidth = cards[0].offsetWidth + 24; // gap
+      const cardWidth = cards[0].offsetWidth + 24;
       track.style.transform = `translateX(-${carouselOffset * cardWidth}px)`;
     }
 
-    function showDishDetail(dish) {
-      const titles = { adobo: 'Basketball', sinigang: 'Anime', ginataang: 'Sleeping' };
-      document.getElementById('detail-title').textContent = titles[dish] || dish;
+    // ── Hobby Detail ──
+    const posters = {
+      'Basketball': 'https://images.unsplash.com/photo-1519861531473-9200262188bf?w=900&q=80',
+      'Anime':      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=900&q=80',
+      'Sleeping':   'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=900&q=80'
+    };
+
+    function showDetail(name) {
+      document.getElementById('detail-title').textContent = name;
+      const video = document.getElementById('detail-video');
+      video.poster = posters[name] || '';
+      video.load();
       document.getElementById('project-list').classList.add('hidden');
       document.getElementById('project-detail').classList.remove('hidden');
     }
@@ -256,5 +267,6 @@
       document.getElementById('project-detail').classList.add('hidden');
     }
   </script>
+
 </body>
 </html>
